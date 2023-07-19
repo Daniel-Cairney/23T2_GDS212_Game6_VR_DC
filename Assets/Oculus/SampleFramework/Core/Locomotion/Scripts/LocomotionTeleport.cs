@@ -255,7 +255,7 @@ public class LocomotionTeleport : MonoBehaviour
     /// <summary>
     /// The LocomotionController that is used by object to discover shared references.
     /// </summary>
-    public LocomotionController LocomotionController { get; private set; }
+    public ControllerTPController LocomotionController { get; private set; }
 
     /// <summary>
     /// The aiming system uses a common function for testing collision with the world, which can be configured to use different
@@ -429,7 +429,7 @@ public class LocomotionTeleport : MonoBehaviour
     /// </summary>
     private void Awake()
     {
-        LocomotionController = GetComponent<LocomotionController>();
+        LocomotionController = GetComponent<ControllerTPController>();
         CreateNewTeleportDestination();
     }
 

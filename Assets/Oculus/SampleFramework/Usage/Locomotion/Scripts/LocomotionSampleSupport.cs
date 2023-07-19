@@ -19,7 +19,7 @@ using UnityEngine.Events;
 
 public class LocomotionSampleSupport : MonoBehaviour
 {
-    private LocomotionController lc;
+    private ControllerTPController lc;
     private bool inMenu = false;
 
     private LocomotionTeleport TeleportController
@@ -29,7 +29,7 @@ public class LocomotionSampleSupport : MonoBehaviour
 
     public void Start()
     {
-        lc = FindObjectOfType<LocomotionController>();
+        lc = FindObjectOfType<ControllerTPController>();
         DebugUIBuilder.instance.AddButton("Node Teleport w/ A", SetupNodeTeleport);
         DebugUIBuilder.instance.AddButton("Dual-stick teleport", SetupTwoStickTeleport);
         DebugUIBuilder.instance.AddButton("L Strafe R Teleport", SetupLeftStrafeRightTeleport);

@@ -19,7 +19,7 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// Simply aggregates accessors.
 /// </summary>
-public class LocomotionController : MonoBehaviour
+public class ControllerTPController : MonoBehaviour
 {
     public OVRCameraRig CameraRig;
 
