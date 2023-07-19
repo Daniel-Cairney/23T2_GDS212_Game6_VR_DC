@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5305449101070133966}
   - component: {fileID: 2922029471815597374}
   - component: {fileID: 2584761238606607698}
+  - component: {fileID: 8463561667219657721}
   m_Layer: 6
   m_Name: Artorias Sword
   m_TagString: Untagged
@@ -200,6 +201,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.0772016
   m_Center: {x: -3.7430096, y: 6.753153, z: -0.6356431}
+--- !u!114 &8463561667219657721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259616509190899014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7944a4246fe9d42439749b5fbe8890b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1716330856291264622
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +224,7 @@ GameObject:
   - component: {fileID: 7339237951865981120}
   - component: {fileID: 6440283834397566252}
   - component: {fileID: 3508626759523348659}
+  - component: {fileID: 6881365900478422790}
   m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
@@ -241,11 +255,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716330856291264622}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1062897, y: 17.355375, z: 1.319307}
-  m_Center: {x: -0.021994442, y: -5.680094, z: -0.5656996}
+  m_Size: {x: 1.1062897, y: 17.355375, z: 0.30129194}
+  m_Center: {x: -0.021994442, y: -5.680094, z: -0.5509981}
 --- !u!65 &3508626759523348659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -259,6 +273,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.36067, y: 2.58358, z: 2.5940835}
   m_Center: {x: 0.022371225, y: 4.22623, z: -0.7970381}
+--- !u!65 &6881365900478422790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716330856291264622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1062897, y: 17.309458, z: 0.2659547}
+  m_Center: {x: -0.021994438, y: -5.65678, z: -0.5565629}
 --- !u!1 &3782770944970405748
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +379,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c11ffdec4ddf3b04bacb3ada5e626065, type: 2}
+  - {fileID: 2100000, guid: 8805cfdc3eeb64b479d9ea9704a72289, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
