@@ -1,15 +1,13 @@
 using System.Collections;
 using UnityEngine;
+
 namespace DanielCairney
 {
-
-
-
     public class EnemySpawner : MonoBehaviour
     {
         public GameObject enemyPrefab;
         public Transform spawnZone;
-        public float initialSpawnDelay = 1f;
+        public float initialSpawnDelay = 15f; // Set to 15 seconds for the initial spawn delay
         public float spawnCooldown = 10f;
 
         private int spawnCount = 1;
@@ -21,6 +19,7 @@ namespace DanielCairney
 
         private IEnumerator SpawnEnemies()
         {
+            // Add the initial spawn delay
             yield return new WaitForSeconds(initialSpawnDelay);
 
             while (true)
@@ -54,5 +53,4 @@ namespace DanielCairney
             return spawnPosition;
         }
     }
-
 }

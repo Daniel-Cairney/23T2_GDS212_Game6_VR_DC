@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 namespace DanielCairney
 {
     public class CatHealth : MonoBehaviour
@@ -30,7 +31,7 @@ namespace DanielCairney
             catHitSound.Play();
             if (currentHealth <= 0)
             {
-                Die();
+                CatDie();
             }
 
             UpdateHealthBar();
@@ -49,11 +50,9 @@ namespace DanielCairney
 
 
 
-        private void Die()
+        private void CatDie()
         {
-            // Perform actions when the cat's health reaches zero or below
-            Debug.Log("Cat died!");
-            // Add any necessary code, such as game over logic or respawning
+            SceneManager.LoadScene("Game Over Scene");
         }
     }
 }
