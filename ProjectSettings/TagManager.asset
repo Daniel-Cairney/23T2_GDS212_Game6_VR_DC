@@ -7,6 +7,7 @@ TagManager:
   - SamplesInfoPanel
   - Enemy
   - Cat
+  - RoomLight
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - Body
   - Enemy
-  - 
+  - Cat
   - 
   - 
   - 
